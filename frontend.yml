@@ -4,4 +4,4 @@
     - name: install nginx server
       ansible.builtin.yum:
         name: nginx
-        state: lates
+        state: latest
