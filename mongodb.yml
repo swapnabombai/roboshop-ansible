@@ -19,4 +19,4 @@
       ansible.builtin.systemd:
         state: restarted
         name: mongodb
-        enable: true
+        enabled: true
