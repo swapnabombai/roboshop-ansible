@@ -1,7 +1,7 @@
 - name: setup mongodb
   hosts: all
   become: yes
-  tasks:
+  roles:
     - name: copy mongodb repo file
       ansible.builtin.copy:
         src: mongodb.repo

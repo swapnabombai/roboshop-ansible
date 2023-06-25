@@ -1,7 +1,7 @@
 - name: setup frontend
   hosts: all
   become: yes
-  tasks:
+  roles:
     - name: install nginx server
       ansible.builtin.yum:
         name: nginx
