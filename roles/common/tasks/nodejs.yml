@@ -11,6 +11,12 @@
   ansible.builtin.shell: npm install
   args:
     chdir: /app
+
+- name: load schema
+  ansible.builtin.import_tasks:
+    file: mongodb_schema_setup.yml
+  when: load_schema
+
 - name: systemd setup
   ansible.builtin.import_tasks:
     file: systemd_setup.yml
