@@ -9,4 +9,4 @@
     state: installed
 
 - name: load schema
-  ansible.builtin.shell: mongo --host 172.31.89.216  </app/schema/{{component}}.js
+  ansible.builtin.shell: mongo --host mongodb-dev.robogame.store  </app/schema/{{component}}.js
